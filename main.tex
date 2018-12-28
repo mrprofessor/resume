@@ -9,27 +9,30 @@
 \usepackage{hyperref}
 \usepackage{setspace}
 \usepackage{enumitem}
-% \usepackage[utf8]{inputenc}
-% \usepackage[T1]{fontenc}
 
 % Font stuff %
-\RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX]{unicode-math}
 
-\defaultfontfeatures{Mapping=tex-text}
-
-\setmainfont
-[Path = fonts/, Mapping=tex-text, Color=textcolor,
-BoldFont=texgyreheros-bold.otf,
-ItalicFont=texgyreheros-italic.otf,
-BoldItalicFont=texgyreheros-bolditalic.otf
-]
-{texgyreheros-regular.otf}
-
-\setmathfont{texgyreheros-regular.otf}
-
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \pagestyle{empty}
-\setlength{\tabcolsep}{0em}
+
+% \RequirePackage[quiet]{fontspec}
+% \RequirePackage[math-style=TeX]{unicode-math}
+
+% \defaultfontfeatures{Mapping=tex-text}
+
+% \setmainfont
+% [Path = fonts/, Mapping=tex-text, Color=textcolor,
+% BoldFont=texgyreheros-bold.otf,
+% ItalicFont=texgyreheros-italic.otf,
+% BoldItalicFont=texgyreheros-bolditalic.otf
+% ]
+% {texgyreheros-regular.otf}
+
+% \setmathfont{texgyreheros-regular.otf}
+
+% \setlength{\tabcolsep}{0em}
+
  % -------------------------*--------------------------- %
 
 
@@ -79,14 +82,15 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \hrule
 \vspace{-0.4em}
-\subsection*{Experience}
+\section*{Experience}
 
 % First list shouldn't have any bullet/dash and the second
 % iterative list should have bullet
-\renewcommand{\labelitemi}{}
-\renewcommand\labelitemii{$\bullet$}
+\renewcommand{\labelitemi}{$\bullet$}
+% \renewcommand\labelitemii{$\--$}
 
 \begin{itemize}
+    \setlength\itemsep{5pt}
 	\parskip=0.1em
 
 	\item
@@ -98,7 +102,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 	    {\emph{Jan 2018 -- Present}}
 		{\emph{}}
 	\begin{itemize*}
-	    \setlength\itemsep{2pt}
+	   % \setlength\itemsep{2pt}
 		\item Currently working as a member of Cloud Scale Engineering(CSE) team \& responsible for integrating numerous \textbf{AWS/GCP/Azure} services to the product.
         \item Architected the integration of \textbf{AWS Inspector} service which helped Turbot become a featured partner of \href{https://aws.amazon.com/inspector/partners/}{\textbf{Inspector}}.
         \item Made Turbot Azure \textbf{CIS} compliant by implementing most of the CIS Microsoft Azure Foundations Benchmark v1.0.0.
@@ -116,7 +120,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 	    {\emph{Nov 2016 -- Dec 2017}}
 		{\emph{}}
 	\begin{itemize*}
-	    \setlength\itemsep{2pt}
+	   % \setlength\itemsep{2pt}
 		\item Made the case for moving to \textbf{React + Redux} \& successfully ported the employee exit portal from angularJs to \textbf{React}.
         \item Developed the aircraft data management portal of a client using React.
         \item Wrote a huge amount of wikis for Python \& UI/UX development community.
@@ -131,11 +135,11 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 		{\emph{Jul 2016 -- Dec 2017}}
 		{\emph{}}
 	\begin{itemize*}
-	    \setlength\itemsep{2pt}
+	   % \setlength\itemsep{2pt}
 		\item In a team of four, developed an IDE for a legacy Domain Specific Language.
         \item Implemented \textbf{Syntax highlighting} \& \textbf{Intellisense} using Xtext framework on the same.
         \item Customized most of the Mantis bug tracker as per the project requirement \& maintained it for the most part of my tenure.
-        \item Topper of \textbf{Wipro CodeExpress 2016} ( Product Engineering Services ) \& Digithon.
+        \item Topper of \textbf{Wipro CodeExpress 2016} ( Product Engineering Services ) \& Digithon ( Wipro Digital ).
 	\end{itemize*}
 
     \item
@@ -147,7 +151,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 		{\emph{Dec 2013 -- May 2016}}
 		{\emph{}}
 	\begin{itemize*}
-	    \setlength\itemsep{2pt}
+	   % \setlength\itemsep{2pt}
         \item Designed, developed \& maintained the website of an event management company for three years.
         \item Developed \& deployed an WordPress site for a local business.
         % \item Designed the college cult-fest website for two years.
@@ -158,7 +162,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \hrule
 \vspace{-0.4em}
-\subsection*{Education}
+\section*{Education}
 
 \begin{itemize}
 	\parskip=0.1em
@@ -172,7 +176,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 		{\emph{Jul 2012 -- Jun 2016}}
 		{\emph{}}
 	\begin{itemize*}
-	    \setlength\itemsep{2pt}
+	   % \setlength\itemsep{2pt}
 		\item {Algorithms, Data Structures, Complexity Analysis, Compiler Design, OOP, Networking, Operating Systems, Computer Architecture, C/Python.}
 	\end{itemize*}
 
@@ -181,7 +185,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \hrule
 \vspace{-0.4em}
-\subsection*{Certifications}
+\section*{Certifications}
 
 \begin{itemize}
 	\parskip=0.1em
@@ -209,7 +213,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \hrule
 \vspace{-0.4em}
-\subsection*{Technical Skills}
+\section*{Technical Skills}
 
 \begin{indentsection}{\parindent}
 \hyphenpenalty=1000
