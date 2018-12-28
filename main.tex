@@ -1,0 +1,224 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[10pt,a4paper,hidelinks]{article}
+\usepackage[a4paper,margin=0.75in]{geometry}
+\usepackage{mdwlist}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{enumitem}
+% \usepackage[utf8]{inputenc}
+% \usepackage[T1]{fontenc}
+
+% Font stuff %
+\RequirePackage[quiet]{fontspec}
+\RequirePackage[math-style=TeX]{unicode-math}
+
+\defaultfontfeatures{Mapping=tex-text}
+
+\setmainfont
+[Path = fonts/, Mapping=tex-text, Color=textcolor,
+BoldFont=texgyreheros-bold.otf,
+ItalicFont=texgyreheros-italic.otf,
+BoldItalicFont=texgyreheros-bolditalic.otf
+]
+{texgyreheros-regular.otf}
+
+\setmathfont{texgyreheros-regular.otf}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+ % -------------------------*--------------------------- %
+
+
+% indent section style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+\setstretch{1.2}{
+{\huge \textbf{Rudra Narayan Kar}}
+
+{\large{Software Engineer}} \\
+
++91 8763701890\ \ \textbullet
+\ \ kar.rudra008@gmail.com 
+
+\href{https://mrprofessor.github.io}{mrprofessor.github.io} \ \ \textbullet
+\ \ \href{https://github.com/mrprofessor}{github.com/mrprofessor} \ \textbullet
+\ \ \href{https://linkedin.com/in/mrprofessor}{linkedin.com/in/mrprofessor}
+\\
+}
+\end{center}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Experience}
+
+% First list shouldn't have any bullet/dash and the second
+% iterative list should have bullet
+\renewcommand{\labelitemi}{}
+\renewcommand\labelitemii{$\bullet$}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{Software Developement Engineer}}
+		{\href{https://www.turbot.com/}{\textbf{Turbot, Kolkata}}}
+	\\
+	\headerrow
+	    {\emph{Jan 2018 -- Present}}
+		{\emph{}}
+	\begin{itemize*}
+	    \setlength\itemsep{2pt}
+		\item Currently working as a member of Cloud Scale Engineering(CSE) team \& responsible for integrating numerous \textbf{AWS/GCP/Azure} services to the product.
+        \item Architected the integration of \textbf{AWS Inspector} service which helped Turbot become a featured partner of \href{https://aws.amazon.com/inspector/partners/}{\textbf{Inspector}}.
+        \item Made Turbot Azure \textbf{CIS} compliant by implementing most of the CIS Microsoft Azure Foundations Benchmark v1.0.0.
+        \item Added object level access control restrictions for \textbf{Google Cloud Platform} storage service by building a custom inventory.
+        \item Fixed a number of bugs (both back-end \& UI) while working closely with the customer support team.
+        \item Current webmaster of the official website of the company.
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{UI Developer}}
+		{\href{https://www.topcoder.com/}{\textbf{Topgear, Wipro, Chennai}}}
+	\\
+	\headerrow
+	    {\emph{Nov 2016 -- Dec 2017}}
+		{\emph{}}
+	\begin{itemize*}
+	    \setlength\itemsep{2pt}
+		\item Made the case for moving to \textbf{React + Redux} \& successfully ported the employee exit portal from angularJs to \textbf{React}.
+        \item Developed the aircraft data management portal of a client using React.
+        \item Wrote a huge amount of wikis for Python \& UI/UX development community.
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Project Engineer}}
+		{\href{https://www.wipro.com/en-IN/product-engineering/}{\textbf{Product Engineering Services, Wipro, Chennai}}}
+	\\
+	\headerrow
+		{\emph{Jul 2016 -- Dec 2017}}
+		{\emph{}}
+	\begin{itemize*}
+	    \setlength\itemsep{2pt}
+		\item In a team of four, developed an IDE for a legacy Domain Specific Language.
+        \item Implemented \textbf{Syntax highlighting} \& \textbf{Intellisense} using Xtext framework on the same.
+        \item Customized most of the Mantis bug tracker as per the project requirement \& maintained it for the most part of my tenure.
+        \item Topper of \textbf{Wipro CodeExpress 2016} ( Product Engineering Services ) \& Digithon.
+	\end{itemize*}
+
+    \item
+	\headerrow
+		{\textbf{Freelance Web Developer}}
+		{\textbf{Bhubaneswar, Odisha}}
+	\\
+	\headerrow
+		{\emph{Dec 2013 -- May 2016}}
+		{\emph{}}
+	\begin{itemize*}
+	    \setlength\itemsep{2pt}
+        \item Designed, developed \& maintained the website of an event management company for three years.
+        \item Developed \& deployed an WordPress site for a local business.
+        % \item Designed the college cult-fest website for two years.
+	\end{itemize*}
+	
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Education}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{B.Tech In Computer Science \& Engineering}}
+		{{\href{http://www.bput.ac.in/}{\textbf{BPUT, Odisha}}}}
+	\\
+	\headerrow
+		{\emph{Jul 2012 -- Jun 2016}}
+		{\emph{}}
+	\begin{itemize*}
+	    \setlength\itemsep{2pt}
+		\item {Algorithms, Data Structures, Complexity Analysis, Compiler Design, OOP, Networking, Operating Systems, Computer Architecture, C/Python.}
+	\end{itemize*}
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Certifications}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{Red Hat Certified System Administrator}}
+		{{\href{https://www.redhat.com/}{\textbf{Red Hat}}}}
+	\\
+	\headerrow
+	    {\emph{\href{https://www.redhat.com/rhtapps/certification/verify/?certId=150-141-034}{www.redhat.com/rhtapps/certification/verify/?certId=150-141-034}}}
+		{\emph{}}
+	
+	\item 
+	\headerrow
+		{\textbf{Microsoft AZURE214x}}
+		{{\href{https://www.microsoft.com/}{\textbf{Microsoft}}}}
+	\\
+	\headerrow
+	    {\emph{\href{https://openedx.microsoft.com/certificates/f0864cf4e5414a4387c0b6b1e5dcd880}{openedx.microsoft.com/certificates/f0864cf4e5414a4387c0b6b1e5dcd880}}}
+		{\emph{}}
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Technical Skills}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Strong:]
+	JavaScript, React, Express, Serverless, RESTful architecture, Bootstrap, Git, AWS
+	\item[Knowledgeable:]
+	Python, C, Java, Redux, Webpack, CoffeeScript, GCP, Azure, MongoDB, Graphql, \LaTeX{}
+\end{description*}
+\end{indentsection}
+
+\end{document}
