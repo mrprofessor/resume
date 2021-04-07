@@ -8,6 +8,7 @@
 \usepackage{setspace}
 \usepackage{enumitem}
 \usepackage{fontawesome}
+\usepackage{xcolor}
 
 % Font stuff %
 
@@ -39,6 +40,13 @@
 	#2 \\
 \end{tabular*}}
 
+% TODO
+% Define classes such as header, sub-header etc. Until then change the color here.
+\definecolor{IFBlue}{HTML}{0F6688}
+\definecolor{IFDarkBlue}{HTML}{00425C}
+\definecolor{IFMediumBlue}{HTML}{17739A}
+\definecolor{IFLightBlue}{HTML}{228FBD}
+
 % and the actual content starts here
 \begin{document}
 
@@ -61,10 +69,9 @@
 \end{center}
 
 
-\hrule
+{\color{IFLightBlue} \hrule}
 \vspace{-0.3em}
-\section*{Experience}
-
+{\color{IFMediumBlue}\section*{Experience}}
 % First list shouldn't have any bullet/dash and the second
 % iterative list should have bullet
 \renewcommand{\labelitemi}{$\bullet$}
@@ -78,47 +85,46 @@
 	\item
 	\headerrow
 		{\textbf{Software Engineer - III}}
-		{\href{https://www.rackspace.com/}{\textbf{Rackspace, Bangalore}}}
+		{\textbf{\colorbox{IFLightBlue!10}{\href{https://www.rackspace.com/}{{Rackspace}}}{, Bangalore}}}
 	\\
 	\headerrow
 	    {\emph{May 2020 -- Present}}
 		{\emph{}}
 	\begin{itemize*}
 	    \setlength\itemsep{2pt}
-	    \item Developing and maintaining core APIs, database operators as a part of {\href{https://www.objectrocket.com/}{ObjectRocket}} team.
-	    \item Helped automate the billing process for the core customers using an internal platform.
+	    \item Developed and maintained core APIs, database operators as a part of {\href{https://www.objectrocket.com/}{ObjectRocket}} team.
+	    \item Automated the billing process for specific core customers using an internal platform.
 	    
 	\end{itemize*}
 	
 	\item
 	\headerrow
 		{\textbf{Consultant}}
-		{\href{https://www.infomagnus.com/}{\textbf{Infomagnus, Hyderabad}}}
+		{\textbf{\colorbox{IFLightBlue!10}{\href{https://www.infomagnus.com/}{{Infomagnus}}}{, Hyderabad}}}
 	\\
 	\headerrow
 	    {\emph{Jun 2019 -- Apr 2020}}
 		{\emph{}}
 	\begin{itemize*}
 	    \setlength\itemsep{2pt}
-        \item Implemented a role based access control layer using a customized rule engine, which is being used by at least 50,000 users.
-		\item Developed a framework around {\textbf{Flask}}, which is being used across different retail projects as a part of domain driven development.
+        \item Implemented a role-based access control layer using a customized rule engine, which is being used by at least 50,000 users.
+		\item Developed a framework around {\textbf{Flask}}, which is being used across different retail projects as a part of domain-driven development.
 		\item Designed a non-blocking \& asynchronous task scheduler using {\textbf{Celery}} \& {\textbf{Docker}}.
-		\item Worked closely with the DevOps team to help setup the common CI/CD process across all
-		projects in the company.
+		\item Worked closely with the DevOps team to help set up the common CI/CD process across all projects in the company.
 		
 	\end{itemize*}
 
 	\item
 	\headerrow
 		{\textbf{Software Development Engineer}}
-		{\href{https://www.turbot.com/}{\textbf{Turbot, Kolkata}}}
+		{\textbf{\colorbox{IFLightBlue!10}{\href{https://www.turbot.com/}{{Turbot}}}{, Kolkata}}}
 	\\
 	\headerrow
 	    {\emph{Jan 2018 -- Jun 2019}}
 		{\emph{}}
 	\begin{itemize*}
 	    \setlength\itemsep{2pt}
-        \item Architected the integration of \textbf{AWS Inspector} service which helped Turbot become a featured partner of \href{https://aws.amazon.com/inspector/partners/}{\textbf{Inspector}}.
+        \item Architected the integration of \textbf{AWS Inspector} service, which helped Turbot become a featured partner of \href{https://aws.amazon.com/inspector/partners/}{\textbf{Inspector}}.
         \item Made Turbot Azure \textbf{CIS} compliant by implementing most of the CIS Microsoft Azure Foundations Benchmark v1.0.0.
         \item Added object level access control restrictions for \textbf{Google Cloud Platform} storage service by building a custom inventory.
         \item Helped the front-end team in building the instrumentation dashboard using {\textbf{React}} \& {\textbf{D3.js}}.
@@ -127,14 +133,14 @@
 	\item
 	\headerrow
 		{\textbf{Project Engineer}}
-		{\href{https://www.wipro.com/en-IN/product-engineering/}{\textbf{Wipro, Chennai}}}
+		{\textbf{\colorbox{IFLightBlue!10}{\href{https://www.wipro.com}{\textbf{Wipro}}}{, Chennai}}}
 	\\
 	\headerrow
 		{\emph{Jul 2016 -- Dec 2017}}
 		{\emph{}}
 	\begin{itemize*}
 	    \setlength\itemsep{2pt}
-		\item In a team of four, developed an IDE for a legacy Domain Specific Language \& implemented \textbf{Syntax highlighting} \& \textbf{IntelliSense} using Xtext framework for it.
+		\item In a team of four, developed an IDE for a legacy Domain-Specific Language \& implemented \textbf{Syntax highlighting} \& \textbf{IntelliSense} using Xtext framework for it.
 		\item Made the case for moving to React + Redux \& successfully ported the employee exit portal from angularJs to React.
         % \item Customized most of the Mantis bug tracker as per the project requirement \& maintained it for the most part of my tenure.
         \item Won \textbf{Wipro CodeExpress 2016} ( Product Engineering Services ) \& Digithon ( Wipro Digital ).
@@ -144,9 +150,9 @@
 
 
 % -------------------- Projects ---------------------------
-% \hrule
+% {\color{IFLightBlue} \hrule}
 % \vspace{-0.3em}
-% \section*{Projects}
+% {\color{IFMediumBlue}\section*{Projects}}
 
 % \begin{itemize}
 % 	\parskip=0.1em
@@ -166,9 +172,9 @@
 
 
 
-\hrule
+{\color{IFLightBlue} \hrule}
 \vspace{-0.3em}
-\section*{Education}
+{\color{IFMediumBlue}\section*{Education}}
 
 \begin{itemize}
 	\parskip=0.1em
@@ -176,7 +182,7 @@
 	\item 
 	\headerrow
 		{\textbf{Bachelor Of Technology In Computer Science \& Engineering}}
-		{{\href{http://www.bput.ac.in/}{\textbf{BPUT, Odisha}}}}
+		{\textbf{\colorbox{IFLightBlue!10}{\href{http://www.bput.ac.in}{{BPUT}}}{, Odisha}}}
 	\\
 	\headerrow
 		{\emph{Jul 2012 -- Jun 2016}}
@@ -189,9 +195,9 @@
 \end{itemize}
 
 
-\hrule
+{\color{IFLightBlue} \hrule}
 \vspace{-0.3em}
-\section*{Certifications}
+{\color{IFMediumBlue}\section*{Certifications}}
 
 \begin{itemize}
 	\parskip=0.1em
@@ -199,7 +205,8 @@
 	\item 
 	\headerrow
 		{\textbf{Red Hat Certified System Administrator}}
-		{{\href{https://www.redhat.com/}{\textbf{Red Hat}}}}
+% 		{\textbf{\colorbox{IFLightBlue!10}{\href{https://www.redhat.com/}{{Red Hat}}}}}
+        {}
 	\\
 	\headerrow
 	    {\emph{\href{https://www.redhat.com/rhtapps/certification/verify/?certId=150-141-034}{www.redhat.com/rhtapps/certification/verify/?certId=150-141-034}}}
@@ -208,7 +215,8 @@
 	\item 
 	\headerrow
 		{\textbf{Microsoft AZURE214x}}
-		{{\href{https://www.microsoft.com/}{\textbf{Microsoft}}}}
+		{}
+% 		{\textbf{\colorbox{IFLightBlue!10}{\href{https://www.microsoft.com/}{{Microsoft}}}}}
 	\\
 	\headerrow
 	    {\emph{\href{https://openedx.microsoft.com/certificates/f0864cf4e5414a4387c0b6b1e5dcd880}{openedx.microsoft.com/certificates/f0864cf4e5414a4387c0b6b1e5dcd880}}}
@@ -217,9 +225,9 @@
 \end{itemize}
 
 
-\hrule
+{\color{IFLightBlue} \hrule}
 \vspace{-0.3em}
-\section*{Technical Skills}
+{\color{IFMediumBlue}\section*{Technical Skills}}
 
 \begin{indentsection}{\parindent}
 \hyphenpenalty=1000
